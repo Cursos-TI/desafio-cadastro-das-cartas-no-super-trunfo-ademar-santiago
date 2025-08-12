@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char cidade1[50], cidade2[50];
@@ -17,7 +18,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", cidade1); // Lê até o final da linha, incluindo espaços
+    scanf(" %[^\n]", cidade1); // Lê até o final da linha, incluindo espaços.
 
     printf("População: ");
     scanf("%d", &populacao1);
@@ -39,7 +40,7 @@ int main() {
     scanf("%s", codigo2);
 
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", cidade2); // Lê até o final da linha, incluindo espaços
+    scanf(" %[^\n]", cidade2); // Lê até o final da linha, incluindo espaços.
 
     printf("População: ");
     scanf("%d", &populacao2);
@@ -53,6 +54,24 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontos2);
 
+    // Exibição na tela do Terminal.
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s", cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", pontos1);
+
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da Cidade: %s", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", pontos2);
    
     return 0;
 }
